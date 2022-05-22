@@ -8,23 +8,26 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <form  class="flex-column" action="#">
-    <label class="flex-column">
-      <span>Username</span>
-    <input type="text"
-     name="username" 
-     placeholder="user name" 
-     autofocus
-     required
-     pattern="^[A-Z0-9_-]{3,15}$">
-    </label>
-    <label class="flex-column">
-      <span>Password</span>
-    <input type="text" name="Password" placeholder="Password" required></label>
-    <label class="flex-column">
-      <span>email</span>
-    <input type="email" name="email" placeholder="email" required></label>
-    <input type="submit" value="Sing in">
-  </form>
+ <section class="section">
+   <h2 class="title">Register</h2>
+   <p class="sub-title"> Create your account. It's free and only takes a minute.</p>
+   <form class="form" action="">
+     <div class="fullname">
+       <input type="text" 
+       name="first-name" 
+       placeholder="first name"
+       autofocus>
+       <input type="text" name="last-name" placeholder="last name">
+     </div>
+     <input type="email" name="email" placeholder="email">
+     <input type="password" name="password" placeholder="password">
+     <input type="password" name="confirm-password" placeholder="confirm password">
+     <label >
+      <input type="checkbox" name="accept" > 
+      I accept the <a href="#" target="_blank">Terms of Use </a> & <a href="#" target="_blank">Privacy Policy. </a> </label>
+      <button type="submit">register now</button>
+   </form>
+ </section>
+ <p class="sing-in">Already have an account? <a href="#">Sign in</a></p>
 </body>
 </html>

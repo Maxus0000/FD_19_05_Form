@@ -1,33 +1,55 @@
-
 *{
   box-sizing: border-box;
 }
 body{
-  background-color: bisque;
+  background-color:grey
 }
-.flex-column{
-  display: flex;  
-  flex-direction: column;
-  justify-content: space-between;
+input{
+  padding: .8em;
+  margin-bottom: 15px;
 }
-form{
+.section{
+max-width: 400px;
+margin: auto;
+padding: 3%;
+text-align: center;
+
+background-color:lightslategray;
+}
+.title::before,
+.title::after{
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 115px;
+  background-color:rgb(48, 245, 87);
+  transform: translateY(-5px);
+  box-sizing:border-box
+}
+.title::before{
+margin-right: 13px;
+}
+.title::after{
+  margin-left: 13px;
+}
+.form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 300px;
-  min-height: 300px;
-  margin: auto;
-  padding: 15px;
-  border: 1px solid #aaa;
 }
-form>input{
-  font-size: 16px;
-  padding: 0.3em 0.5em;
+.fullname{
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
 }
-label>input{
-  margin-top: 10px;
+::placeholder{
+  text-transform: capitalize;
 }
-input:focus{
-  border-color: bisque;
-  outline-color: bisque;
+.fullname>*{
+flex-basis: 47%;
+}
+label{
+  text-align: left;
+}
+.sing-in{
+  text-align: center;
 }
