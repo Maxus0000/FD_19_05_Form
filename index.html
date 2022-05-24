@@ -16,18 +16,21 @@
        <input type="text" 
        name="first-name" 
        placeholder="first name"
-       autofocus>
-       <input type="text" name="last-name" placeholder="last name">
+       autofocus
+       pattern="^[a-zA-Z]">
+       <input type="text" name="last-name" placeholder="last name"
+       pattern="^[a-zA-Z]">
      </div>
      <input type="email" name="email" placeholder="email">
-     <input type="password" name="password" placeholder="password">
+     <input type="password" name="password" placeholder="password"
+     pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
      <input type="password" name="confirm-password" placeholder="confirm password">
      <label >
       <input type="checkbox" name="accept" > 
-      I accept the <a href="#" target="_blank">Terms of Use </a> & <a href="#" target="_blank">Privacy Policy. </a> </label>
-      <button type="submit">register now</button>
+      I accept the <a class="green-link" href="#" target="_blank">Terms of Use </a> & <a class="green-link" href="#" target="_blank">Privacy Policy. </a> </label>
+      <button class="btn" type="submit">register now</button>
    </form>
  </section>
- <p class="sing-in">Already have an account? <a href="#">Sign in</a></p>
+ <p class="sing-in">Already have an account? <a class="sing-in-link" href="#">Sign in</a></p>
 </body>
 </html>
